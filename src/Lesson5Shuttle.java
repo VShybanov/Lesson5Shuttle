@@ -1,6 +1,6 @@
 public class Lesson5Shuttle {
     final static int SHUTTLE_NUMBER = 100;
-    final static int[] digits = {4, 9};
+    final static int[] DIGITS = {4, 9};
 
     private static boolean hasDigits(int number, int ...digitsToSearch){
         int r = number % 10;
@@ -28,7 +28,7 @@ public class Lesson5Shuttle {
             //    continue;
 
             // Якщо нещасливими є всі ЧИСЛА де зустрічаються ЦИФРИ 4 та 9, то
-            if (hasDigits(numToCheck, digits))
+            if (hasDigits(numToCheck, DIGITS))
                 continue;
 
             shuttleCount++;
